@@ -1,0 +1,94 @@
+==============================
+ Project Structure Description
+==============================
+
+Root Folder: Project/
+---------------------
+This is the main directory for the project. It contains source code, tests, binaries, and setup configuration.
+
+|-- bin/
+|   |-- project
+|       • This directory stores executable or compiled scripts.
+|       • The 'project' file is typically the main executable entry point or startup script for the program.
+
+|-- project/
+|   |-- test/
+|   |   |-- __init__.py
+|   |   |-- test_main.py
+|       • This folder holds all test files.
+|       • '__init__.py' makes this folder a Python package.
+|       • 'test_main.py' contains unit tests for main.py or other project modules.
+
+|   |-- __init__.py
+|       • Marks the 'project' folder as a Python package, allowing imports such as 'import project.main'.
+|
+|   |-- main.py
+|       • The core source file where the main functionality or application logic resides.
+
+|-- setup.py
+|   • Standard Python setup script for packaging and installation.
+|   • Contains metadata (name, version, author, dependencies, etc.).
+|   • Used for installing the project via pip or setuptools.
+
+|-- README
+|   • Basic information or instructions about the project.
+|   • Typically includes usage details, installation instructions, and credits.
+
+==============================
+ Additional Notes
+==============================
+• This structure is typical for Python applications that are installable via setuptools.
+• To run tests: you can use pytest or unittest (e.g., `pytest project/test`).
+• To install the package locally: run `pip install -e .` in the Project/ directory.
+• The bin/ folder may be linked to executable entry points defined in setup.py.
+
+
+==============================
+ Python Project Add-ons
+==============================
+
+Recommended tools to improve code quality, testing, and workflow.
+
+----------------------------------------
+🧩 Core Development
+----------------------------------------
+black            Automatic code formatter for consistent style
+isort            Sorts and groups imports automatically
+flake8           Linting tool for checking code quality
+
+----------------------------------------
+🧪 Testing
+----------------------------------------
+pytest          Simple and powerful testing framework
+pytest-cov      Plugin for test coverage reports
+
+----------------------------------------
+⚙️ Type Checking
+----------------------------------------
+mypy            Static type checker to catch typing errors early
+
+----------------------------------------
+📦 Packaging & Dependency Management
+----------------------------------------
+setuptools      Standard tool for building and packaging Python projects
+wheel           Build Python packages in .whl format
+
+----------------------------------------
+🧰 Optional (Recommended)
+----------------------------------------
+pre-commit      Run code checks automatically before committing
+
+⠀⠀⠀⠀⠀⠀⠀⢰⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡄⠀⠀⠀⠀⠀
+⠀⠹⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢠⣄⡀⠀⠀
+⠀⠀⠙⢿⣿⣿⡇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⢸⣿⣿⡶⠀
+⠀⠀⠀⠀⠉⠛⠇⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠸⠟⠋⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠸⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣶⣶⣶⣶⣶⣶⣶⣶⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣀⣀⣈⣉⣉⣉⣉⣉⣉⣉⣉⣉⣉⣉⣉⣉⣉⣁⣀⣀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠀⠀⠀⠀
+
+                STEEL-CORE
+                 STUDIOS
+
