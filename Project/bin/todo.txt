@@ -1,0 +1,9 @@
+CSV SKOON MAAK ( naam, acc nommer, cell nommer, 30+...)
+GUI (Load csv, filter dae, filter kak, options, settings, message settings)
+BUSINESS ACCOUNT (try sonder nommer, of as nie, cheap sim card)
+LOGIC (cases/dae ,< 50, as dit - is dont send, bulk send)
+COMPANY NAME, LOGO, EMAIL, 
+
+
+
+
