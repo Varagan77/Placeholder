@@ -1,0 +1,29 @@
+[
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "pywhatkit",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pywhatkit",
+        "description": "pywhatkit",
+        "detail": "pywhatkit",
+        "documentation": {}
+    },
+    {
+        "label": "create_project_structure",
+        "kind": 2,
+        "importPath": "Project.bin.create_structure",
+        "description": "Project.bin.create_structure",
+        "peekOfCode": "def create_project_structure(base_dir=\"Project\"):\n    structure = {\n        \"bin\": [\"project\"],\n        \"project\": {\n            \"test\": [\"__init__.py\", \"test_main.py\"],\n            \"__init__.py\": None,\n            \"main.py\": None\n        },\n        \"setup.py\": None,\n        \"README\": None",
+        "detail": "Project.bin.create_structure",
+        "documentation": {}
+    }
+]
