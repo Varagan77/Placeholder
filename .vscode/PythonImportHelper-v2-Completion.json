@@ -9,6 +9,48 @@
         "documentation": {}
     },
     {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "sqlite3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sqlite3",
+        "description": "sqlite3",
+        "detail": "sqlite3",
+        "documentation": {}
+    },
+    {
+        "label": "Tk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "filedialog",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "messagebox",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
         "label": "pywhatkit",
         "kind": 6,
         "isExtraImport": true,
@@ -24,6 +66,150 @@
         "description": "Project.bin.create_structure",
         "peekOfCode": "def create_project_structure(base_dir=\"Project\"):\n    structure = {\n        \"bin\": [\"project\"],\n        \"project\": {\n            \"test\": [\"__init__.py\", \"test_main.py\"],\n            \"__init__.py\": None,\n            \"main.py\": None\n        },\n        \"setup.py\": None,\n        \"README\": None",
         "detail": "Project.bin.create_structure",
+        "documentation": {}
+    },
+    {
+        "label": "name",
+        "kind": 5,
+        "importPath": "Project.bin.log_core",
+        "description": "Project.bin.log_core",
+        "peekOfCode": "name = \"\"\nR = \"\"\nservice_date = \"\"\nref = \"\"\n#changes when variables are added\nmessage = f\"\"\"\nDear {name},\nNotice! R{R}, Service date: {service_date}, CHS Medical Services, Room 101, MediClinic \nBFN, FNB 62435637113, Branch 230134, Ref {ref}, Tel 051 5227146, bkotze@chs.bfnmcc.co.za\nRegards,",
+        "detail": "Project.bin.log_core",
+        "documentation": {}
+    },
+    {
+        "label": "R",
+        "kind": 5,
+        "importPath": "Project.bin.log_core",
+        "description": "Project.bin.log_core",
+        "peekOfCode": "R = \"\"\nservice_date = \"\"\nref = \"\"\n#changes when variables are added\nmessage = f\"\"\"\nDear {name},\nNotice! R{R}, Service date: {service_date}, CHS Medical Services, Room 101, MediClinic \nBFN, FNB 62435637113, Branch 230134, Ref {ref}, Tel 051 5227146, bkotze@chs.bfnmcc.co.za\nRegards,\nBarbara Kotze",
+        "detail": "Project.bin.log_core",
+        "documentation": {}
+    },
+    {
+        "label": "service_date",
+        "kind": 5,
+        "importPath": "Project.bin.log_core",
+        "description": "Project.bin.log_core",
+        "peekOfCode": "service_date = \"\"\nref = \"\"\n#changes when variables are added\nmessage = f\"\"\"\nDear {name},\nNotice! R{R}, Service date: {service_date}, CHS Medical Services, Room 101, MediClinic \nBFN, FNB 62435637113, Branch 230134, Ref {ref}, Tel 051 5227146, bkotze@chs.bfnmcc.co.za\nRegards,\nBarbara Kotze\n\"\"\"",
+        "detail": "Project.bin.log_core",
+        "documentation": {}
+    },
+    {
+        "label": "ref",
+        "kind": 5,
+        "importPath": "Project.bin.log_core",
+        "description": "Project.bin.log_core",
+        "peekOfCode": "ref = \"\"\n#changes when variables are added\nmessage = f\"\"\"\nDear {name},\nNotice! R{R}, Service date: {service_date}, CHS Medical Services, Room 101, MediClinic \nBFN, FNB 62435637113, Branch 230134, Ref {ref}, Tel 051 5227146, bkotze@chs.bfnmcc.co.za\nRegards,\nBarbara Kotze\n\"\"\"\nprint(message)",
+        "detail": "Project.bin.log_core",
+        "documentation": {}
+    },
+    {
+        "label": "message",
+        "kind": 5,
+        "importPath": "Project.bin.log_core",
+        "description": "Project.bin.log_core",
+        "peekOfCode": "message = f\"\"\"\nDear {name},\nNotice! R{R}, Service date: {service_date}, CHS Medical Services, Room 101, MediClinic \nBFN, FNB 62435637113, Branch 230134, Ref {ref}, Tel 051 5227146, bkotze@chs.bfnmcc.co.za\nRegards,\nBarbara Kotze\n\"\"\"\nprint(message)",
+        "detail": "Project.bin.log_core",
+        "documentation": {}
+    },
+    {
+        "label": "root",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "root = Tk()\nroot.withdraw()  \nfile_path = filedialog.askopenfilename(title='Select Excel file', filetypes=[('Excel Files', '*.xlsx *.xls')])\nif not file_path:\n    messagebox.showinfo('Info', 'No file selected. Exiting.')\n    exit()\n#-------------------\ndf = pd.read_excel(file_path)\ndf.columns = df.columns.str.strip()\ntext_cols = ['Account No.', 'Account Name Rekening Naam', 'Cell Number']",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "file_path",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "file_path = filedialog.askopenfilename(title='Select Excel file', filetypes=[('Excel Files', '*.xlsx *.xls')])\nif not file_path:\n    messagebox.showinfo('Info', 'No file selected. Exiting.')\n    exit()\n#-------------------\ndf = pd.read_excel(file_path)\ndf.columns = df.columns.str.strip()\ntext_cols = ['Account No.', 'Account Name Rekening Naam', 'Cell Number']\nfor col in text_cols:\n    if col in df.columns:",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "df = pd.read_excel(file_path)\ndf.columns = df.columns.str.strip()\ntext_cols = ['Account No.', 'Account Name Rekening Naam', 'Cell Number']\nfor col in text_cols:\n    if col in df.columns:\n        df[col] = df[col].astype(str).str.strip()\ndf = df.replace('N/A', None)\ndf = df.replace(r'^\\s*$', None, regex=True)\n#Create DB will replace previous db file be careful\ndb_file = 'log_db.db'",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "df.columns",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "df.columns = df.columns.str.strip()\ntext_cols = ['Account No.', 'Account Name Rekening Naam', 'Cell Number']\nfor col in text_cols:\n    if col in df.columns:\n        df[col] = df[col].astype(str).str.strip()\ndf = df.replace('N/A', None)\ndf = df.replace(r'^\\s*$', None, regex=True)\n#Create DB will replace previous db file be careful\ndb_file = 'log_db.db'\nif os.path.exists(db_file):",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "text_cols",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "text_cols = ['Account No.', 'Account Name Rekening Naam', 'Cell Number']\nfor col in text_cols:\n    if col in df.columns:\n        df[col] = df[col].astype(str).str.strip()\ndf = df.replace('N/A', None)\ndf = df.replace(r'^\\s*$', None, regex=True)\n#Create DB will replace previous db file be careful\ndb_file = 'log_db.db'\nif os.path.exists(db_file):\n    os.remove(db_file)",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "df = df.replace('N/A', None)\ndf = df.replace(r'^\\s*$', None, regex=True)\n#Create DB will replace previous db file be careful\ndb_file = 'log_db.db'\nif os.path.exists(db_file):\n    os.remove(db_file)\nconn = sqlite3.connect(db_file)\ncursor = conn.cursor()\n#Create table\ncursor.execute('''",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "df = df.replace(r'^\\s*$', None, regex=True)\n#Create DB will replace previous db file be careful\ndb_file = 'log_db.db'\nif os.path.exists(db_file):\n    os.remove(db_file)\nconn = sqlite3.connect(db_file)\ncursor = conn.cursor()\n#Create table\ncursor.execute('''\nCREATE TABLE accounts (",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "db_file",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "db_file = 'log_db.db'\nif os.path.exists(db_file):\n    os.remove(db_file)\nconn = sqlite3.connect(db_file)\ncursor = conn.cursor()\n#Create table\ncursor.execute('''\nCREATE TABLE accounts (\n    account_no TEXT,\n    account_name TEXT,",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "conn",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "conn = sqlite3.connect(db_file)\ncursor = conn.cursor()\n#Create table\ncursor.execute('''\nCREATE TABLE accounts (\n    account_no TEXT,\n    account_name TEXT,\n    cell_number TEXT,\n    total TEXT,\n    unallocated TEXT,",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "cursor",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "cursor = conn.cursor()\n#Create table\ncursor.execute('''\nCREATE TABLE accounts (\n    account_no TEXT,\n    account_name TEXT,\n    cell_number TEXT,\n    total TEXT,\n    unallocated TEXT,\n    current TEXT,",
+        "detail": "Project.bin.log_db",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "Project.bin.log_db",
+        "description": "Project.bin.log_db",
+        "peekOfCode": "df = df.rename(columns={\n    'Account No.': 'account_no',\n    'Account Name Rekening Naam': 'account_name',\n    'Cell Number': 'cell_number',\n    'Total Totale': 'total',\n    'Unallocated Ongeallokeer': 'unallocated',\n    'Current Huidig': 'current',\n    '30 Days 30 Dae': 'days_30',\n    '60 Days 60 Dae': 'days_60',\n    '90 Days 90 Dae': 'days_90',",
+        "detail": "Project.bin.log_db",
         "documentation": {}
     }
 ]
